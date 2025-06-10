@@ -1,70 +1,148 @@
-# Getting Started with Create React App
+# Modern React Template
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A production-ready Vite + React template with modern tooling, beautiful UI components, and developer-focused features. Built with contemporary design principles inspired by leading companies like Vercel.
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+### 🚀 Modern Development Stack
 
-### `npm start`
+- **Vite 5** - Lightning-fast build tool with HMR
+- **React 18** - Latest React with concurrent features
+- **TypeScript** - Full type safety and IntelliSense
+- **TailwindCSS 4** - Utility-first CSS with modern features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🎨 Beautiful UI Components
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Animated Components** - Smooth animations with Framer Motion
+- **Modern Design System** - Clean, minimal aesthetic inspired by Vercel
+- **Dark/Light Theme** - System preference aware theme switching
+- **Interactive Elements** - Buttons, tooltips, icons with micro-interactions
 
-### `npm test`
+### 🛠️ Developer Experience
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **ESLint + Prettier** - Code formatting and linting
+- **Git Hooks** - Pre-commit hooks with lint-staged
+- **Auto Routes** - File-based routing with React Router DOM
+- **TypeScript Config** - Optimized tsconfig with path mapping
 
-### `npm run build`
+### 📱 Production Ready
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Responsive Design** - Mobile-first approach
+- **Optimized Builds** - Code splitting and tree shaking
+- **Modern Browser Support** - ES2020+ features
+- **Vercel Ready** - Optimized for Vercel deployment
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Quick Start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+- Node.js 18+
+- pnpm
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# Clone the template
+git clone https://github.com/innei-template/vite-react-tailwind-template
+cd vite-react-tailwind-template
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Install dependencies
+pnpm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Start development server
+pnpm dev
+```
 
-## Learn More
+## 📁 Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # Base UI components (buttons, tooltips, etc.)
+│   └── common/         # Common app components
+├── pages/              # File-based routing pages
+├── hooks/              # Custom React hooks
+├── lib/                # Utility functions and configurations
+├── providers/          # Context providers
+├── styles/             # Global styles and Tailwind config
+└── assets/             # Static assets (fonts, images)
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🎨 UI Components
 
-### Code Splitting
+### Buttons
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Multiple variants (primary, secondary, ghost, destructive)
+- Loading states with animations
+- Icon support with Lucide React
+- Motion effects with Framer Motion
 
-### Analyzing the Bundle Size
+### Theme System
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Automatic dark/light mode detection
+- Manual theme switching
+- Persistent theme preferences
+- Smooth transitions between themes
 
-### Making a Progressive Web App
+### Interactive Elements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Animated tooltips
+- Icon buttons with hover effects
+- Context menus
+- Loading indicators
 
-### Advanced Configuration
+## 🔧 Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Tailwind CSS
 
-### Deployment
+The template uses TailwindCSS 4 with custom configurations for:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Custom color palette
+- Typography scales
+- Animation utilities
+- Dark mode support
 
-### `npm run build` fails to minify
+### TypeScript
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Path mapping is configured for clean imports:
+
+```typescript
+import { Button } from '~/components/ui/button/Button'
+import { useDark } from '~/hooks/common/useDark'
+```
+
+### ESLint & Prettier
+
+Opinionated configuration for:
+
+- React best practices
+- TypeScript strict rules
+- Import sorting
+- Code formatting consistency
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This template is open source and available under the [MIT License](LICENSE).
+
+2025 © Innei, Released under the MIT License.
+
+> [Personal Website](https://innei.in/) · GitHub [@Innei](https://github.com/innei/)
+
+## 🙏 Acknowledgments
+
+- Design inspiration from [Vercel](https://vercel.com)
+- Icons by [Lucide](https://lucide.dev)
+- Animations by [Framer Motion](https://www.framer.com/motion)
+- Built with [Vite](https://vitejs.dev) and [React](https://react.dev)
+
+---
+
+**Ready to build something amazing?** ⚡
