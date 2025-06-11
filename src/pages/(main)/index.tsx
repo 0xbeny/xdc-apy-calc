@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { NodeTable } from "../../components/ui/NodeTable";
 import { Tabs } from "../../components/ui/Tabs";
 import { Navbar } from "../../components/ui/Navbar";
-
+import { Disclaimer } from "../../components/ui/Disclaimer";
 export const Component = () => {
   const [numNodes, setNumNodes] = useState(0);
   const [xdcPrice, setXdcPrice] = useState(0);
@@ -38,8 +38,12 @@ export const Component = () => {
 
   return (
     <div className="min-h-screen bg-gray-950">
+      <div className="mb-2">
       <Navbar />
+      
+      </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div className="mb-4"><Disclaimer/></div>
         <div className="flex flex-col">
           <div className="flex gap-1 mb-4">
             <div>

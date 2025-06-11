@@ -1,5 +1,5 @@
 import { Button } from '~/components/ui/button'
-
+import { Disclaimer } from '~/components/ui/Disclaimer'
 import { name, repository } from '../../../package.json'
 
 export const Footer = () => {
@@ -20,7 +20,6 @@ export const Footer = () => {
               <span>@0xbeny</span>
             </a>
           </div>
-
           {/* 版权信息 */}
           <div className="text-xs text-text-tertiary text-center">
             © {new Date().getFullYear()} All rights reserved.
